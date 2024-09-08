@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    color: black;
+    background: #CCC;
+}
+textarea {
+    max-width: 90%;
+}
+noscript {
+    display: block;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px black;
+    background: white;
+}
+.topbar {
+    width: 100%;
+    height: fit-content;
+    background: white;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    box-shadow: 0 0 5px black;
+    position: absolute;
+    top: 0;
+    #siteName {
+        display: inline-flex;
+        width: fit-content;
+        margin: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        outline: 2px solid black;
+        transition: 0.1s;
+    }
+    #siteName:active {
+        outline: 1px solid black;
+    }
+    .subtitle {
+        display: inline;
+    }
+    .ver {
+        margin-inline: 2px;
+        color: gray;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .menu {
+        display: flex;
+        margin: 0;
+        padding: 0 20px;
+        list-style: none;
+        small {
+            margin: 12px 0;
+        }
+        li {
+            margin: 10px 20px;
+            a {
+                color: green;
+            }
+        }
+    }
+}
+.underbar {
+    width: 100%;
+    height: fit-content;
+    padding-inline: 10px;
+    color: white;
+    font-size: 11px;
+    background: #777;
+    position: fixed;
+    bottom: 0;
+}
+.space {
+    height: 100px;
+    @media screen and (max-width: 600px) {
+        height: 120px;
+    }
+}
+.center {
+    text-align: center;
+}
+#main {
+    display: none;
+    max-width: 800px;
+    margin-block: 30px;
+    margin-inline: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px black;
+    background: white;
+    .let {
+        display: grid;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        color: #999;
+        font-size: 100px;
+        text-align: center;
+        align-items: center;
+        border: 3px dashed #32a1ce;
+        border-radius: 100px;
+        overflow: hidden;
+    }
+    .long {
+        width: 80%;
+        font-size: 10vw;
+    }
+    .title {
+        width: fit-content;
+        padding-inline: 10px;
+        border-left: thick solid #ccc;
+    }
+    ul {
+        list-style: none;
+        margin-block: 10px;
+        li {
+            display: inline-block;
+            margin-block: 3px;
+        }
+    }
+    #string {
+        display: none;
+    }
+}
+input[type="number"] {
+    width: 120px;
+    height: 19px;
+    font-size: 14px;
+    border: none;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+input[type="number"]:focus-visible {
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+input[type="button"] {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    color: black;
+    background: #cec;
+    border: 1.4px solid lightblue;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+input[type="button"]:active {
+    background: #ccc;
+}

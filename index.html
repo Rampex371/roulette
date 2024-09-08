@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta char="utf-8">
+        <meta name="robots" content="noindex">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="./pic/shinobu.png">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js">
+            let colhex = Math.floor(Math.random()*16777215).toString(16);
+            colhex = `#${("000000" + colhex).slice(-6)}`;
+        </script>
+        <title>🎰ルーレット</title>
+    </head>
+    <body>
+        <div class="space"></div>
+        <div class="topbar">
+            <div id="siteName">Roulette</div>
+            <div class="subtitle">乱数式</div>
+            <div class="ver">v1.0</div>
+            <ul class="menu">
+                <small class="type">入力タイプ: </small>
+                <li><a href="?t=number">数値</a></li>
+                <li><a href="?t=string">自己入力</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="roulette" class="let">0</div>
+            <div class="center">
+                <input type="button" id="start" value="回す">
+            </div>
+            <hr>
+            <div class="title">範囲設定</div>
+            <ul id="number">
+                <li>最小値</li>
+                <input type="number" id="minval" value="1" placeholder="1"><br>
+                <li>最大値</li>
+                <input type="number" id="maxval" value="100" placeholder="100">
+            </ul>
+            <ul id="string">
+                <li>文字列を入力: </li><br>
+                <textarea id="textarea" name="example" cols="50" rows="5" placeholder="1行ごとに判別されます"></textarea>
+            </ul>
+        </div>
+        <noscript>
+            <h3>JavaScriptを有効にしてください。</h3>
+            <a href>ページをリロード</a>
+        </noscript>
+        <div class="underbar">
+            <div>◎当サイトではlocalStorageを使用して一部データを保持しています。</div>
+        </div>
+    </body>
+</html>
+<script>
+    document.getElementById("main").style.display = "block";
+    console.log("HTMLの読み込みを終了");
+</script>
